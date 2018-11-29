@@ -1,0 +1,56 @@
+/* adding an animation to the page   */
+@keyframes moveInLeft{
+    /* start */
+    0%{
+        opacity: 0;
+        /* coming from left to right size */
+        transform: translateX(-10rem);
+    }
+
+    80%{
+        transform: translateX(1rem);
+
+    }
+    /* end */
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+    @keyframes moveInRight{
+
+        /* start */
+        0%{
+            opacity: 0;
+            /* coming from left to right size */
+            /* plus value move to the right */
+            transform: translateX(10rem);
+        }
+    
+        80%{
+            transform: translateX(-1rem);
+    
+        }
+        /* end */
+        100%{
+            opacity: 1;
+            transform: translate(0px);
+        }
+}
+
+@keyframes moveInbottom{
+
+    /* start */
+    0%{
+        opacity: 0;
+        /* coming from left to right size */
+        /* plus value move to the right */
+        transform: translateY(3rem);
+    }
+    /* end */
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}

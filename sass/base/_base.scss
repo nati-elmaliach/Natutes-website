@@ -1,0 +1,24 @@
+
+// All of the basic defintions of the page //@at-root
+
+
+
+
+/*Rest the page  the * selector is a universial selector*/
+*
+*::after
+*::before{
+    margin:0;
+    padding:0;
+    /* include padding and border in the element's total width and height */
+    box-sizing: inherit;
+}
+
+html{
+    /*root font size on any device */
+    font-size: 62.5%;
+}
+
+body{
+    box-sizing: border-box;
+}

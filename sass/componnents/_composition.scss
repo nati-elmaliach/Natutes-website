@@ -1,0 +1,58 @@
+.composition{
+    position: relative;
+
+    &__photo{
+    // 55% of the photo  
+    width:55%;
+    box-shadow: 0 1.5rem 4rem rgba($color-black,.4);
+    // border bettwen all images
+    border-radius:2px;
+
+    // as soon as we set the position to absoulte on an element this elements will be placed according to a reference-
+    // which is the first element that it  encouters which has his position set to somthing 
+    // which in this case is the composition element,will be on the top left corner of this element
+    position: absolute;
+
+    // this is the deafult z index that wil change in the hover effect
+    z-index:10;
+    transition: all .2s;
+
+    // this is a outline propert that give us a border while hover 
+    outline-offset: 2rem;
+
+    &--p1{
+        // moving 0 px from the left side of the container
+        left:0;
+        top:-2rem;
+    }
+    &--p2{
+        // moving 0 px from the right side of the container
+        right:0;
+        top:2rem;
+    }
+    &--p3{
+        // moving 0 px from the right side of the container
+        left:20%;
+        top:10rem;
+        
+    }
+    &:hover{
+        // setting a border to the images ,but we can use outline-offset (look at the parent)
+        outline: 1.5rem solid $color-primary;
+
+        transform: scale(1.05) translateY(-.5rem);
+
+        // the box-shadow should also change when we hover
+        box-shadow: 0 2.5rem 4rem rgba($color-black,.5);
+
+        // Increasing th z index that will be shown on the hover effect
+        z-index: 20;
+    }
+    }
+    // when we hover a composition then select th composition photo that is not hovered
+    &:hover &__photo:not(:hover){
+        transform: scale(.95);
+    }
+}
+
+     

@@ -1,0 +1,50 @@
+.story{
+    // 75%of the parent element 
+    width:75%;
+    // this is a block element inside a bloack element so set top and bottom to 0 and adjust right and left
+     margin: 0 auto;
+     box-shadow: 0 3rem 6rem rgba($color-black,.1);
+     background-color: $color-white;
+    //  shapeing the corners
+     border-radius: 3px;
+     padding:6rem;
+     padding-left: 9rem;
+     font-size: $defalut-font-size;
+    //  shape in the x direction 
+     transform: skewX(-12deg);
+
+/*
+    & > * => select all of story__ direcet childs 
+    & > * {
+      transform: skewX(12deg);
+    this will not work on the shape child because the shape allredy have a transform  
+    }
+*/
+        // shaping the picture 
+        &__shape{
+            width: 15rem;
+            height: 15rem;
+            // float:left to make all of the text flaot around it
+            float: left;
+
+            // shape this squere 
+            // 50% of the hieght and width of the element 15rem
+            // 50% from the center
+            -webkit-shape-outside:circle(50% at 50% 50%);
+            shape-outside: circle(50% at 50% 50%);//in order for this to work the element must be floated
+            -webkit-clip-path:circle(50% at 50% 50%);
+            clip-path: circle(50% at 50% 50%);
+            // the best way to move around that floated element is to use a transform 
+            transform: translateX(-3rem) skewX(12deg) ;
+        }
+        &__img{
+            // this image is inside of a shape which has a width well define
+            // so if we say width 100% that will be th 100% precenr of the parent,so 15rem;
+            height: 100%;
+        }
+
+        &__text{
+         transform: skewX(12deg);
+
+        }
+}

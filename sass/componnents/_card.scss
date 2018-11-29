@@ -1,0 +1,194 @@
+.card{
+    // this proprety need to be on the parent elemnet
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    // we used the absolute position,so here we use the relative one
+    position: relative;
+    height: 51rem;
+
+    &__side{
+    background-color:$color-white ;
+    height: 51rem;
+        // translition on all cards
+    transition: all 2s ease;
+    // putting one card on top of one another
+    // since we gave the element an absolute position what thy do,they basically fitting to their width
+    position: absolute;
+    // we wnt them to start(place) at the tio left
+    top:0;
+    left: 0;
+    // make the elements be 100% wide
+    width: 100%;
+
+    // hides the back part of en element
+    backface-visibility: hidden;
+    border-radius: 3px;
+    // since the image is overflowing the parent in the corners
+    overflow: hidden;
+    box-shadow: 0 1.5rem 4rem rgba($color-black,.15);
+
+    &--front{
+    background-color: $color-white;
+    
+    }
+
+    &--back{
+    transform: rotateY(180deg);
+
+    &-1{
+        background-image: linear-gradient(to right bottom,$color-secondery-light,$color-secondery-dark);
+    }
+
+    &-2{
+        background-image: linear-gradient(to right bottom,$color-primary-light,$color-primary-dark);
+    }
+
+    &-3{
+        background-image: linear-gradient(to right bottom,$color-tertiary-light,$color-tertiary-dark);
+    }
+
+    }
+
+
+    }
+    // when we hover the card then the hover transform
+    &:hover &__side--front{
+        // an animation to rotate the card 180 deg;
+        transform: rotateY(-180deg);
+    }
+    &:hover &__side--back{
+        // an animation to rotate the card 180 deg;
+        transform: rotateY(0);
+    }
+    // front sise styling
+    &__picture{
+        background-size: cover;
+        // blend the 2 images
+        background-blend-mode:screen; 
+        // designing the picture
+        -webkit-clip-path: polygon(0 0,100% 0,100% 85%,0 100%);
+        //             top left top right bottom right bottom left 
+        clip-path: polygon(0 0,100% 0,100% 85%,0 100%);
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+
+        &--1{
+            // blending 2 pictuers 
+            background-image:  linear-gradient(to right bottom,$color-secondery-light,$color-secondery-dark)
+            ,url(../img/nat-5.jpg);
+            // the picture hieght
+            height: 23rem;
+        }
+        &--2{
+            // blending 2 pictuers 
+            background-image:  linear-gradient(to right bottom,$color-primary-light,$color-primary-dark)
+            ,url(../img/nat-6.jpg);
+            // the picture hieght
+            height: 23rem;
+        } 
+        &--3{
+           // blending 2 pictuers 
+           background-image:  linear-gradient(to right bottom,$color-tertiary-light,$color-tertiary-dark)
+           ,url(../img/nat-7.jpg);
+           // the picture hieght
+           height: 23rem;
+        }
+    }
+
+    &__heading{
+        font-size: 2.8rem;
+        font-weight: 200;
+        text-transform: uppercase;
+        text-align: right;
+        color:$color-white;
+        // positioning on the top of the image
+        position: absolute;
+        top: 12rem;
+        right:2rem;
+        // width of the text
+        width:75%;
+
+    }
+    // design the text inside of each card
+    &__heading-span{
+        // first card
+        padding: 1rem 1.5rem;
+        // treat thos 2 entites like they were separated (see 2 lines of text as one)
+        -webkit-box-decoration-break:clone;
+        box-decoration-break: clone;
+
+        &--1{
+            background-image: linear-gradient(to right bottom,
+            rgba($color-secondery-light,.85),
+            rgba($color-secondery-dark,.85));
+        }
+        &--2{
+            background-image: linear-gradient(to right bottom,
+            rgba($color-primary-light,.85),
+            rgba($color-primary-dark,.85));
+        }
+        &--3{
+            background-image: linear-gradient(to right bottom,
+            rgba($color-tertiary-light,.85),
+            rgba($color-tertiary-dark,.85));
+        }
+
+
+    }
+    &__details{
+        padding:3rem;
+        margin-left: -40px;
+        ul{
+            list-style: none;
+            // 80% of the container
+            width: 80%;
+            // center the ul element inside the container
+            // were centering a block element inside a block element
+             //margin:0 auto;//0 top and bottom and left and right automatically calculated by the browser
+
+
+            li{
+                text-align: center;
+                font-size: 1.5rem;
+                padding: 1rem;
+
+                // we want all of the li element except the last one
+                &:not(:last-child){
+                    border-bottom:1px solid $color-drey-light-2;
+                }
+            }
+        }
+    }
+    // front card styling
+    &__cta{
+        position: absolute;
+         top:50%;
+         left:50%;
+        //right now the cta is startin from the left corner of the element 
+        // by applyng transform:translate(-50%,-50%) 
+        // we are taking it back to 50% of the highet and the width of this element
+        // and by doing so we center the cte element
+         transform: translate(-50%,-50%);
+        text-align: center;
+        // the bottun is adapting this width and so it in one line
+        width: 90%;
+
+    }
+
+    &__price-box{
+        margin-bottom: 8rem;
+        color: $color-white;
+
+
+    }
+    &__price-only{
+        font-size: 1.4rem;
+        text-transform: uppercase;
+    }
+
+    &__price-value{
+        font-size: 6rem;
+        // control how thin the text will be
+        font-weight: 100;
+    }
+}

@@ -1,0 +1,43 @@
+.section-about{
+    background-color: $color-drey-light-1;
+    // 25rem from the top and botton and 0 on both sides
+    padding: 25rem 0;
+    // cover the view port 
+    margin-top:-20vh; 
+}
+
+.section-features{
+    // moving this container 20vh up 
+    margin-top:-10rem; 
+    // 20rem top botton and 0 left right 
+    padding: 20rem 0;
+    // setting the background image
+    background-image:linear-gradient(to left bottom, 
+    rgba($color-primary-light,0.8),
+    rgba($color-primary-dark,0.8)),
+    url(../img/nat-4.jpg);
+    background-size: cover;
+
+    //skew the entire section
+    transform: skewY(-7deg);
+
+    // select (*) all of the (>) direct child of the section-featurs
+    & > *{
+        transform: skewY(7deg);
+    }
+}
+
+.section-course{
+    background-color: $color-drey-light-1;
+    // 25rem from the top and 50rem botton and 0 on both sides
+    padding: 25rem 0 15rem 0;
+    margin-top: -10rem;
+}
+
+.section-stories{
+    padding: 15rem 0;
+    background-color: $color-drey-light-1;
+
+
+
+}

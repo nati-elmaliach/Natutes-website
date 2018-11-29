@@ -1,0 +1,42 @@
+// the header page 
+
+
+.Header{
+    /* at any time the hieght of this element should be 95% of the viewport  */
+    height: 95vh;
+    /* making the first image transprent */
+    background-image:linear-gradient(to left bottom, 
+    rgba($color-primary-light,0.8),
+    rgba($color-primary-dark,0.8)),
+    url(../img/hero-small.jpg);
+    background-size: cover;
+    /* make sure the picture will allways stay at the top  */
+    background-position: top;
+    position: relative;
+    -webkit-clip-path: polygon(0 0,100% 0,100% 75vh,0 100%);
+    /* shaping our header  */
+    clip-path: polygon(0 0,100% 0,100% 75vh,0 100%);
+
+    &__logo-box{
+    /* The element is positioned relative to its first positioned (not static) ancestor element */
+    position: absolute;
+    /* top and left from the header */
+    top:4rem;
+    left:4rem;
+    }
+
+    &__logo{
+        /* the widht is configured by the browser */
+        height: 3.5rem;
+    }
+    
+    &__text-box{
+        position: absolute;
+        top:40%;
+        left:50%;
+        /* will be shifted half of the wiedth from left and top */
+        transform:translate(-50%,-50%);
+        text-align: center;
+    }
+}
+

@@ -1,0 +1,50 @@
+.row{
+    // The max width of the rows//
+    max-width: $grid-width;
+
+    // center block elements inside block elements//
+    margin:0 auto;
+
+    // the not allows us to select everything except the last-child
+    &:not(:last-child){
+    // make margin-bottom of 8rem
+    margin-bottom:$gutter-vertical; 
+    // float the coulomn
+    }
+    @include clearfix;
+
+    // after the float the hieght is 0px,so we use the clearfix here//
+
+    // applaying the style to all of the coulmns
+    // select all class atribute that start with col-
+    [class ^= 'col-']{
+        float: left;
+        // all except the last child
+        &:not(:last-child){
+            margin-right: $gutter-horizantel;
+        }
+
+    }
+    .col-1-of-2{
+        // a function for calculating the width
+        width: calc((100% - #{$gutter-horizantel}) / 2);
+       
+    }
+    .col-1-of-3{
+        width: calc((100% - 2 * #{$gutter-horizantel}) / 3);
+    }
+
+    .col-2-of-3{
+        width: calc(2 * (( 100% - 2 * #{$gutter-horizantel}) / 3) + #{$gutter-horizantel});
+    }
+    
+    .col-1-of-4{
+        width: calc(( 100% - 3 * #{$gutter-horizantel}) / 4);
+    }
+    .col-3-of-4{
+        width: calc(((( 100% - 3 * #{$gutter-horizantel}) / 4) * 3) + 2 * #{$gutter-horizantel});
+    }
+    .col-2-of-4{
+        width: calc(((( 100% - 3 * #{$gutter-horizantel}) / 4) * 2 ) + #{$gutter-horizantel});
+    }
+}
