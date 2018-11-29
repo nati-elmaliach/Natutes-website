@@ -240,7 +240,10 @@
                     <!-- the h2 is an inline-block element and so if we set the parent to center that inline-block will be treated as text  -->
                     <a href="#" class="btn btn--green">Discovere our tours</a>
                 </div>
+
         </section>
+
+        <!------------------------ a story section------------------- -->
 
         <section class="section-stories">
                 <div class="u-center-text u-margin-bottom-big ">
@@ -250,11 +253,13 @@
                      </h2>
                </div>      
                <!-- only using the row as a container  -->
-                  <div class="row">
+                  <div class="row"> 
                     <div class="story">
                         <!-- the figure help us to wrap the image or video and add a caption to it -->
                         <figure class="story__shape">
                             <img src="img/nat-8.jpg" alt="person on a tour" class="story__img" />
+                            <!-- Use a <figure> element to mark up a photo in a document. -->
+                            <figcaption class="story__caption"> Mary Smith</figcaption>   
                         </figure>
                         <div class="story__text">
                             <div class="heading-terttiary u-margin-bottom-small"> i had the best week ever with my family</div>
@@ -265,6 +270,40 @@
                         </div>
                     </div>
                   </div>
+
+                  <div class="row"> 
+                    <div class="story">
+                        <!-- the figure help us to wrap the image or video and add a caption to it -->
+                        <figure class="story__shape">
+                            <img src="img/nat-9.jpg" alt="person on a tour" class="story__img" />
+                            <!-- Use a <figure> element to mark up a photo in a document. -->
+                            <figcaption class="story__caption"> Jack Wilson</figcaption>   
+                        </figure>
+                        <div class="story__text">
+                            <div class="heading-terttiary u-margin-bottom-small">A life changing experience </div>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt molestiae eius necessitatibus officiis, quibusdam quas,Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt molestiae the  consectetur adipisicing elit. Sunt molestiae
+                            </p>
+
+                        </div>
+                    </div>
+                  </div>
+
+                  <div class="u-center-text u-margin-top-huge ">
+                    <!-- the h2 is an inline-block element and so if we set the parent to center that inline-block will be treated as text  -->
+                    <a href="#" class="btn-text">Read more stories &rarr;</a>
+                </div>
+
+                <!-------------------------------------- making a backgroung video------------------------------------ -->
+                <div class="bg-video">
+                    <!-- A avideo element -->
+                    <video class="bg-video__content" autoplay muted loop>
+                        <!--a src tag  -->
+                        <source src="img/video.mp4" type="video/mp4">
+                        <source src="img/video.webm" type="video/webm">
+                            your browsere cannot supported!
+                    </video>
+                </div>
         </section>
 
         </main>

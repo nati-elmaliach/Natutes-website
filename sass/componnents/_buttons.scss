@@ -80,6 +80,7 @@
         &:link,&:visited{
             color:$color-primary;
             font-size: $defalut-font-size;
+            font-weight: 800;
             // disply:inline-block so we can use all the padding margin etc 
             // display as one block
 

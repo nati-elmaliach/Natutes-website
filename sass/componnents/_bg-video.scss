@@ -1,0 +1,25 @@
+.bg-video{
+    // adjusting the container size
+    position: absolute;//since we using position absulote here we change the parent element the stoty to position:relative
+    top:0;
+    left:0;
+    // height and width of the parent element
+    height: 100%;
+    width: 100%;
+    // positin the video componnent behind the story componnent
+    z-index: -1;
+    opacity:.30;
+    // select the video itself
+
+    // when somthing over flow our element we use overflow:hidden
+    overflow: hidden;
+
+
+
+    &__content{
+        height: 100%;
+        width: 100%;
+        // the video will fill te entire parent while keeping the ratio 
+        object-fit: cover;// similar to the background-size:cover
+    }
+}

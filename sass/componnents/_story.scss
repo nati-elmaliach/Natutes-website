@@ -4,7 +4,13 @@
     // this is a block element inside a bloack element so set top and bottom to 0 and adjust right and left
      margin: 0 auto;
      box-shadow: 0 3rem 6rem rgba($color-black,.1);
-     background-color: $color-white;
+
+     //background-color: $color-white;//BEFORE
+
+    //  AFTER ADDING THE VIDEO
+ //:we want this container to look transparrent
+    background-color: rgba($color-white,.6);
+
     //  shapeing the corners
      border-radius: 3px;
      padding:6rem;
@@ -36,15 +42,55 @@
             clip-path: circle(50% at 50% 50%);
             // the best way to move around that floated element is to use a transform 
             transform: translateX(-3rem) skewX(12deg) ;
+            position: relative;
         }
         &__img{
             // this image is inside of a shape which has a width well define
             // so if we say width 100% that will be th 100% precenr of the parent,so 15rem;
             height: 100%;
+            // position the img at the center
+            transform: translateX(-4rem) scale(1.4);
+            backface-visibility: hidden;
+            // make the img scale when hoverd
+            transition: transform 0.5s;
         }
 
         &__text{
          transform: skewX(12deg);
+        }
 
+        &__caption{
+           
+            // after position:absolut we need to set the container to position relative
+            position:absolute;
+            top:50%;
+            left: 50%;
+            transform: translate(-50%,20%);
+            color: $color-white;
+            text-transform: uppercase;
+            font-size: 1.6rem;
+            text-align: center;
+            // make this text invisable 
+            opacity: 0; 
+            // making the animation happen
+            transition: all .5s;
+            // fixing the small glitch in the end
+            backface-visibility: hidden;
+        }
+
+        // as soon as the story is hovered we want the stoy__caption to =>
+        &:hover &__caption{
+            opacity: 1;
+            transform: translate(-50% ,-50%);
+            zoom:96%;
+            
+        }
+        // when we hover the story what we want to change is the img
+        &:hover &__img{
+            // making the img blur
+            transform: translateX(-4rem) scale(1);
+            // a css property that help us add filter
+            -webkit-filter: blur(1px);
+            filter: blur(1px) brightness(80%);
         }
 }
