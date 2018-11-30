@@ -1,0 +1,66 @@
+.footer{
+    background-color:$color-grey-dark3;
+    padding: 10rem 0;
+    font-size:1.4rem;
+    color:$color-drey-light-1;
+
+    /*this is an inline element so we can use text-align:center;  */
+    &__logo-box{
+        text-align: center;
+        margin-bottom:8rem;
+    }
+
+    &__logo{
+        width:15rem;
+        height:auto;
+    }
+
+    &__navigation{
+        border-top: 1px solid $color-grey-dark;
+        padding-top:2rem;
+        /* an inline block occupy only the wight that the contens needs    */
+        display:inline-block; 
+    }
+
+    &__list{
+        list-style: none;
+    }
+
+    &__item{
+        /* make them in one line */
+        display: inline-block;
+
+        /* all of them,except the last child */
+        &:not(:last-child) {
+            margin-right: 1.5rem;
+        }
+
+    }
+
+    &__link{
+        &:link,&:visited{
+            color:$color-drey-light-1;
+            background-color:$color-grey-dark3;
+            text-decoration: none;
+            text-transform: uppercase;
+            display: inline-block;
+            transition: all .2s;
+        }
+
+        &:hover,&:active{
+            color: $color-primary;
+            box-shadow: 0 1rem 2rem rgba($color-black,.4);
+            transform: rotate(4deg) scale(1.3)
+        }
+    }
+
+     &__copyright{
+
+        border-top: 1px solid $color-grey-dark;
+        padding-top:2rem;
+        width:80%;
+        float:right;
+        margin-top: 0;
+    }
+ 
+}

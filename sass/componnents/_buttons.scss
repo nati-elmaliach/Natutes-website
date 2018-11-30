@@ -1,7 +1,7 @@
 .btn{
 
     /* we want the visited state look like the link state */
-    &:link,&:visited{
+    &,&:link,&:visited{
         text-transform: uppercase;
         /* get rid of the link defalut style */
         text-decoration: none;
@@ -13,6 +13,10 @@
         transition: all .2s;
         position: relative;
         font-size: $defalut-font-size;
+
+        /* change the default button style */
+        border: none;
+        cursor: pointer;
     }
     &:hover{
         transform: translateY(-3px);
@@ -26,7 +30,8 @@
     }
     
     /* when we click the btn */
-    &:active{
+    &:active,&:focus{
+        outline: none;
         transform:translateY(-1px); 
         box-shadow: 0 .5rem 1rem rgba($color-black,.2);
     }

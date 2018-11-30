@@ -114,28 +114,28 @@ body {
     margin-bottom: 3rem; }
 
 .u-center-text {
-  text-align: center; }
+  text-align: center !important; }
 
 .u-margin-bottom-big {
-  margin-bottom: 8rem; }
+  margin-bottom: 8rem !important; }
 
 .u-margin-bottom-medium {
-  margin-bottom: 4rem; }
+  margin-bottom: 4rem !important; }
 
 .u-margin-bottom-small {
-  margin-bottom: 1.6rem; }
+  margin-bottom: 1.5rem !important; }
 
 .u-margin-top-big {
-  margin-top: 8rem; }
+  margin-top: 8rem !important; }
 
 .u-margin-top-huge {
-  margin-top: 10rem; }
+  margin-top: 10rem !important; }
 
 .btn {
   /* we want the visited state look like the link state */
   /* when we click the btn */
   /*create an elemnt the looks like the btn   */ }
-  .btn:link, .btn:visited {
+  .btn, .btn:link, .btn:visited {
     text-transform: uppercase;
     /* get rid of the link defalut style */
     text-decoration: none;
@@ -146,7 +146,10 @@ body {
     border-radius: 10rem;
     transition: all .2s;
     position: relative;
-    font-size: 1.6rem; }
+    font-size: 1.6rem;
+    /* change the default button style */
+    border: none;
+    cursor: pointer; }
   .btn:hover {
     transform: translateY(-3px);
     /* X   Y    blur   opacity  */
@@ -155,7 +158,8 @@ body {
     .btn:hover::after {
       transform: scaleX(1.4) scaleY(1.6);
       opacity: 0; }
-  .btn:active {
+  .btn:active, .btn:focus {
+    outline: none;
     transform: translateY(-1px);
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
   .btn--white {
@@ -419,6 +423,92 @@ body {
     width: 100%;
     object-fit: cover; }
 
+.form {
+  /* select everything except the last-child */
+  /* sibling selector + (chosse the next sibling) we can also use ~ which is all siblings */
+  /* making our coustom button */
+  /* as soon as we hit the radio input becoms checked,then we select the sibling of that one and then the child  */ }
+  .form__group:not(:last-child) {
+    margin-bottom: 2rem; }
+  .form__input {
+    font-size: 1.5rem;
+    padding: 1.5rem 2rem;
+    border-radius: 2px;
+    color: inherit;
+    background-color: rgba(255, 255, 255, 0.5);
+    /* get rid from the defalut border  */
+    border: none;
+    /*the input elemebt dosent inherit the font family  */
+    font-family: inherit;
+    border-bottom: 3px solid transparent;
+    width: 70%;
+    /* display as a separte block */
+    display: block;
+    transition: all .3s;
+    /* focus pseudo class represenrt state */
+    /* when we have an invalid foucos input element then => */
+    /* pseudo element-> represenrt thing that are actually on the webpage   */ }
+    .form__input:focus {
+      outline: none;
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+      /*            width style color   */
+      border-bottom: 3px solid #55c57a; }
+    .form__input:focus:invalid {
+      border-bottom: 3px solid #ff7730; }
+    .form__input__::-webkit-input-placeholder {
+      color: #999; }
+  .form__label {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-left: 2rem;
+    margin-top: .7rem;
+    /* we should display as a block if we want to use the box model propertis  */
+    display: block;
+    transition: all .3s; }
+  .form__input:placeholder-shown + .form__label {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-4rem); }
+  .form__radio-group {
+    width: 49%;
+    /* make them side by side */
+    display: inline-block; }
+  .form__radio-input {
+    /* hide the real button */
+    display: none; }
+  .form__radio-label {
+    font-size: 1.6rem;
+    cursor: pointer;
+    position: relative;
+    padding-left: 4.5rem; }
+  .form__radio-button {
+    height: 3rem;
+    width: 3rem;
+    border: 4px solid #55c57a;
+    border-radius: 50%;
+    display: inline-block;
+    /* we use absolute to position the element by ourself*/
+    position: absolute;
+    left: 0;
+    top: -.6rem;
+    /* this is the inside button */ }
+    .form__radio-button::after {
+      /* every time we use a psedu elemenr we need to specify its content property */
+      content: "";
+      display: block;
+      height: 1rem;
+      width: 1rem;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #55c57a;
+      opacity: 0;
+      transition: opacity .2s; }
+  .form__radio-input:checked ~ .form__radio-label .form__radio-button::after {
+    opacity: 1; }
+
 .row {
   max-width: 114rem;
   margin: 0 auto; }
@@ -474,6 +564,49 @@ body {
     transform: translate(-50%, -50%);
     text-align: center; }
 
+.footer {
+  background-color: #333;
+  padding: 10rem 0;
+  font-size: 1.4rem;
+  color: #f7f7f7;
+  /*this is an inline element so we can use text-align:center;  */ }
+  .footer__logo-box {
+    text-align: center;
+    margin-bottom: 8rem; }
+  .footer__logo {
+    width: 15rem;
+    height: auto; }
+  .footer__navigation {
+    border-top: 1px solid #777;
+    padding-top: 2rem;
+    /* an inline block occupy only the wight that the contens needs    */
+    display: inline-block; }
+  .footer__list {
+    list-style: none; }
+  .footer__item {
+    /* make them in one line */
+    display: inline-block;
+    /* all of them,except the last child */ }
+    .footer__item:not(:last-child) {
+      margin-right: 1.5rem; }
+  .footer__link:link, .footer__link:visited {
+    color: #f7f7f7;
+    background-color: #333;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    transition: all .2s; }
+  .footer__link:hover, .footer__link:active {
+    color: #55c57a;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+    transform: rotate(4deg) scale(1.3); }
+  .footer__copyright {
+    border-top: 1px solid #777;
+    padding-top: 2rem;
+    width: 80%;
+    float: right;
+    margin-top: 0; }
+
 .section-about {
   background-color: #f7f7f7;
   padding: 25rem 0;
@@ -496,3 +629,17 @@ body {
 .section-stories {
   position: relative;
   padding: 15rem 0; }
+
+.section-book {
+  padding: 15rem 0;
+  background-image: linear-gradient(to right bottom, #7ed56f, #28b485); }
+
+.book {
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/nat-10.jpg);
+  background-size: cover;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
+  height: 50rem; }
+  .book__form {
+    width: 50%;
+    padding: 2.5rem; }
