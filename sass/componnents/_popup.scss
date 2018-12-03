@@ -1,0 +1,42 @@
+.popup{
+    /* this is the all window  */
+    /* box-size */
+    height: 100vh;
+    width: 100%;
+    /* box position property */
+    position: fixed;
+    /* where the box will be shown */
+    top:0;
+    left: 0;
+    background-color:rgba($color-black,.8);
+    z-index: 9999;
+
+
+    &__content{
+         @include absCenter;
+        /* gonna occupy always 75% of the viewport   */
+         width: 75%;
+         background-color: $color-white;
+         box-shadow: 0 2rem 4rem rgba($color-black, $alpha:2); 
+         border-radius: 3px;
+
+         &__popup__left{
+            width: 33.33333333%;
+            float:left;
+         }
+
+         &__popup__right{
+            width: 6.6666667%;
+        }
+         &__popup_img{
+            display: block;
+            width: 100%;
+
+         }
+
+         &__popup__text{
+
+         }
+
+    }
+}

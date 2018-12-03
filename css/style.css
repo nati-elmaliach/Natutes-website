@@ -510,6 +510,37 @@ body {
   .form__radio-input:checked ~ .form__radio-label .form__radio-button::after {
     opacity: 1; }
 
+.popup {
+  /* this is the all window  */
+  /* box-size */
+  height: 100vh;
+  width: 100%;
+  /* box position property */
+  position: fixed;
+  /* where the box will be shown */
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 9999; }
+  .popup__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* gonna occupy always 75% of the viewport   */
+    width: 75%;
+    background-color: #fff;
+    box-shadow: 0 2rem 4rem black;
+    border-radius: 3px; }
+    .popup__content__popup__left {
+      width: 33.33333333%;
+      float: left; }
+    .popup__content__popup__right {
+      width: 6.6666667%; }
+    .popup__content__popup_img {
+      display: block;
+      width: 100%; }
+
 .row {
   max-width: 114rem;
   margin: 0 auto; }
@@ -613,7 +644,8 @@ body {
   /* this is the green circle */
   /* this list will be ivasible */
   /* styling the links */
-  /*  styling the icon*/ }
+  /*  styling the icon*/
+  /* when the cheackbox is selected then we select his brother and then his child which is the child    */ }
   .navigation__checkbox {
     display: none; }
   .navigation__button {
@@ -705,6 +737,14 @@ body {
     top: -1rem; }
   .navigation__button:hover .navigation__icon::after {
     top: 1rem; }
+  .navigation__checkbox:checked + .navigation__button .navigation__icon {
+    background-color: transparent; }
+  .navigation__checkbox:checked + .navigation__button .navigation__icon::before {
+    top: 0;
+    transform: rotate(135deg); }
+  .navigation__checkbox:checked + .navigation__button .navigation__icon::after {
+    top: 0;
+    transform: rotate(-135deg); }
 
 .section-about {
   background-color: #f7f7f7;
