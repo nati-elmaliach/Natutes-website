@@ -26,6 +26,16 @@
     this will not work on the shape child because the shape allredy have a transform  
     }
 */
+
+    @include respond(tab-port){
+        width: 90%;
+        padding:4rem;
+        padding-left: 2rem;
+    }
+
+    @include respond(phone){
+        transform: skew(0);
+    }
         // shaping the picture 
         &__shape{
             width: 15rem;
@@ -43,6 +53,10 @@
             // the best way to move around that floated element is to use a transform 
             transform: translateX(-3rem) skewX(12deg) ;
             position: relative;
+
+            @include respond(phone){
+                transform: translateX(-3rem) skew(0);
+            }
         }
         &__img{
             // this image is inside of a shape which has a width well define
@@ -57,6 +71,11 @@
 
         &__text{
          transform: skewX(12deg);
+
+         @include respond(phone){
+            transform:skew(0);
+            display: flow-root;
+        }
         }
 
         &__caption{

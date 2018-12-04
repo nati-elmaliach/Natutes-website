@@ -9,8 +9,16 @@
     &:not(:last-child){
     // make margin-bottom of 8rem
     margin-bottom:$gutter-vertical; 
-    // float the coulomn
+   
+    @include respond(tab-port){
+        margin-bottom:  $gutter-vertical-small; 
+     }
     }
+    /* scale down the row width wenn the vh is less then 900px */
+    @include respond(tab-port){
+       max-width: 50rem;
+       padding: 0 3rem;
+     }
     @include clearfix;
 
     // after the float the hieght is 0px,so we use the clearfix here//
@@ -22,8 +30,18 @@
         // all except the last child
         &:not(:last-child){
             margin-right: $gutter-horizantel;
+
+            /* move any margin from these culomns */
+            @include respond(tab-port){
+               margin-right: 0; 
+               margin-bottom:  $gutter-vertical-small; 
+            }
         }
 
+        /* when the width of the screen is less then 900px */
+        @include respond(tab-port){
+            width: 100% !important; 
+        }
     }
     .col-1-of-2{
         // a function for calculating the width

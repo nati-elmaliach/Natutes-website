@@ -4,10 +4,19 @@
     font-size:1.4rem;
     color:$color-drey-light-1;
 
+    @include respond(tab-port){
+        padding: 8rem 0;
+    }
+
     /*this is an inline element so we can use text-align:center;  */
     &__logo-box{
         text-align: center;
         margin-bottom:8rem;
+
+        @include respond(tab-port){
+        margin-bottom:6rem;
+
+         }
     }
 
     &__logo{
@@ -20,6 +29,10 @@
         padding-top:2rem;
         /* an inline block occupy only the wight that the contens needs    */
         display:inline-block; 
+        @include respond(tab-port){
+            width: 100%;
+            text-align: center;
+        }
     }
 
     &__list{
@@ -61,6 +74,11 @@
         width:80%;
         float:right;
         margin-top: 0;
+
+        @include respond(tab-port){
+           width: 100%;
+           float: none;
+        }
     }
  
 }

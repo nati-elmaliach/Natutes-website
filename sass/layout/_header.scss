@@ -17,6 +17,11 @@
     /* shaping our header  */
     clip-path: polygon(0 0,100% 0,100% 75vh,0 100%);
 
+    @include respond(phone){
+        -webkit-clip-path: polygon(0 0,100% 0,100% 85vh,0 100%);
+        /* shaping our header  */
+        clip-path: polygon(0 0,100% 0,100% 85vh,0 100%);
+    }
     &__logo-box{
     /* The element is positioned relative to its first positioned (not static) ancestor element */
     position: absolute;
