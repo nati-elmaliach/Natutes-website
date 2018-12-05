@@ -1,3 +1,449 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "linea-basic-10";
+  src:url("fonts/linea-basic-10.eot");
+  src:url("fonts/linea-basic-10.eot?#iefix") format("embedded-opentype"),
+    url("fonts/linea-basic-10.woff") format("woff"),
+    url("fonts/linea-basic-10.ttf") format("truetype"),
+    url("fonts/linea-basic-10.svg#linea-basic-10") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "linea-basic-10" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "linea-basic-10" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-basic-accelerator:before {
+  content: "a";
+}
+.icon-basic-alarm:before {
+  content: "b";
+}
+.icon-basic-anchor:before {
+  content: "c";
+}
+.icon-basic-anticlockwise:before {
+  content: "d";
+}
+.icon-basic-archive:before {
+  content: "e";
+}
+.icon-basic-archive-full:before {
+  content: "f";
+}
+.icon-basic-ban:before {
+  content: "g";
+}
+.icon-basic-battery-charge:before {
+  content: "h";
+}
+.icon-basic-battery-empty:before {
+  content: "i";
+}
+.icon-basic-battery-full:before {
+  content: "j";
+}
+.icon-basic-battery-half:before {
+  content: "k";
+}
+.icon-basic-bolt:before {
+  content: "l";
+}
+.icon-basic-book:before {
+  content: "m";
+}
+.icon-basic-book-pen:before {
+  content: "n";
+}
+.icon-basic-book-pencil:before {
+  content: "o";
+}
+.icon-basic-bookmark:before {
+  content: "p";
+}
+.icon-basic-calculator:before {
+  content: "q";
+}
+.icon-basic-calendar:before {
+  content: "r";
+}
+.icon-basic-cards-diamonds:before {
+  content: "s";
+}
+.icon-basic-cards-hearts:before {
+  content: "t";
+}
+.icon-basic-case:before {
+  content: "u";
+}
+.icon-basic-chronometer:before {
+  content: "v";
+}
+.icon-basic-clessidre:before {
+  content: "w";
+}
+.icon-basic-clock:before {
+  content: "x";
+}
+.icon-basic-clockwise:before {
+  content: "y";
+}
+.icon-basic-cloud:before {
+  content: "z";
+}
+.icon-basic-clubs:before {
+  content: "A";
+}
+.icon-basic-compass:before {
+  content: "B";
+}
+.icon-basic-cup:before {
+  content: "C";
+}
+.icon-basic-diamonds:before {
+  content: "D";
+}
+.icon-basic-display:before {
+  content: "E";
+}
+.icon-basic-download:before {
+  content: "F";
+}
+.icon-basic-exclamation:before {
+  content: "G";
+}
+.icon-basic-eye:before {
+  content: "H";
+}
+.icon-basic-eye-closed:before {
+  content: "I";
+}
+.icon-basic-female:before {
+  content: "J";
+}
+.icon-basic-flag1:before {
+  content: "K";
+}
+.icon-basic-flag2:before {
+  content: "L";
+}
+.icon-basic-floppydisk:before {
+  content: "M";
+}
+.icon-basic-folder:before {
+  content: "N";
+}
+.icon-basic-folder-multiple:before {
+  content: "O";
+}
+.icon-basic-gear:before {
+  content: "P";
+}
+.icon-basic-geolocalize-01:before {
+  content: "Q";
+}
+.icon-basic-geolocalize-05:before {
+  content: "R";
+}
+.icon-basic-globe:before {
+  content: "S";
+}
+.icon-basic-gunsight:before {
+  content: "T";
+}
+.icon-basic-hammer:before {
+  content: "U";
+}
+.icon-basic-headset:before {
+  content: "V";
+}
+.icon-basic-heart:before {
+  content: "W";
+}
+.icon-basic-heart-broken:before {
+  content: "X";
+}
+.icon-basic-helm:before {
+  content: "Y";
+}
+.icon-basic-home:before {
+  content: "Z";
+}
+.icon-basic-info:before {
+  content: "0";
+}
+.icon-basic-ipod:before {
+  content: "1";
+}
+.icon-basic-joypad:before {
+  content: "2";
+}
+.icon-basic-key:before {
+  content: "3";
+}
+.icon-basic-keyboard:before {
+  content: "4";
+}
+.icon-basic-laptop:before {
+  content: "5";
+}
+.icon-basic-life-buoy:before {
+  content: "6";
+}
+.icon-basic-lightbulb:before {
+  content: "7";
+}
+.icon-basic-link:before {
+  content: "8";
+}
+.icon-basic-lock:before {
+  content: "9";
+}
+.icon-basic-lock-open:before {
+  content: "!";
+}
+.icon-basic-magic-mouse:before {
+  content: "\"";
+}
+.icon-basic-magnifier:before {
+  content: "#";
+}
+.icon-basic-magnifier-minus:before {
+  content: "$";
+}
+.icon-basic-magnifier-plus:before {
+  content: "%";
+}
+.icon-basic-mail:before {
+  content: "&";
+}
+.icon-basic-mail-multiple:before {
+  content: "'";
+}
+.icon-basic-mail-open:before {
+  content: "(";
+}
+.icon-basic-mail-open-text:before {
+  content: ")";
+}
+.icon-basic-male:before {
+  content: "*";
+}
+.icon-basic-map:before {
+  content: "+";
+}
+.icon-basic-message:before {
+  content: ",";
+}
+.icon-basic-message-multiple:before {
+  content: "-";
+}
+.icon-basic-message-txt:before {
+  content: ".";
+}
+.icon-basic-mixer2:before {
+  content: "/";
+}
+.icon-basic-mouse:before {
+  content: ":";
+}
+.icon-basic-notebook:before {
+  content: ";";
+}
+.icon-basic-notebook-pen:before {
+  content: "<";
+}
+.icon-basic-notebook-pencil:before {
+  content: "=";
+}
+.icon-basic-paperplane:before {
+  content: ">";
+}
+.icon-basic-pencil-ruler:before {
+  content: "?";
+}
+.icon-basic-pencil-ruler-pen:before {
+  content: "@";
+}
+.icon-basic-photo:before {
+  content: "[";
+}
+.icon-basic-picture:before {
+  content: "]";
+}
+.icon-basic-picture-multiple:before {
+  content: "^";
+}
+.icon-basic-pin1:before {
+  content: "_";
+}
+.icon-basic-pin2:before {
+  content: "`";
+}
+.icon-basic-postcard:before {
+  content: "{";
+}
+.icon-basic-postcard-multiple:before {
+  content: "|";
+}
+.icon-basic-printer:before {
+  content: "}";
+}
+.icon-basic-question:before {
+  content: "~";
+}
+.icon-basic-rss:before {
+  content: "\\";
+}
+.icon-basic-server:before {
+  content: "\e000";
+}
+.icon-basic-server2:before {
+  content: "\e001";
+}
+.icon-basic-server-cloud:before {
+  content: "\e002";
+}
+.icon-basic-server-download:before {
+  content: "\e003";
+}
+.icon-basic-server-upload:before {
+  content: "\e004";
+}
+.icon-basic-settings:before {
+  content: "\e005";
+}
+.icon-basic-share:before {
+  content: "\e006";
+}
+.icon-basic-sheet:before {
+  content: "\e007";
+}
+.icon-basic-sheet-multiple:before {
+  content: "\e008";
+}
+.icon-basic-sheet-pen:before {
+  content: "\e009";
+}
+.icon-basic-sheet-pencil:before {
+  content: "\e00a";
+}
+.icon-basic-sheet-txt:before {
+  content: "\e00b";
+}
+.icon-basic-signs:before {
+  content: "\e00c";
+}
+.icon-basic-smartphone:before {
+  content: "\e00d";
+}
+.icon-basic-spades:before {
+  content: "\e00e";
+}
+.icon-basic-spread:before {
+  content: "\e00f";
+}
+.icon-basic-spread-bookmark:before {
+  content: "\e010";
+}
+.icon-basic-spread-text:before {
+  content: "\e011";
+}
+.icon-basic-spread-text-bookmark:before {
+  content: "\e012";
+}
+.icon-basic-star:before {
+  content: "\e013";
+}
+.icon-basic-tablet:before {
+  content: "\e014";
+}
+.icon-basic-target:before {
+  content: "\e015";
+}
+.icon-basic-todo:before {
+  content: "\e016";
+}
+.icon-basic-todo-pen:before {
+  content: "\e017";
+}
+.icon-basic-todo-pencil:before {
+  content: "\e018";
+}
+.icon-basic-todo-txt:before {
+  content: "\e019";
+}
+.icon-basic-todolist-pen:before {
+  content: "\e01a";
+}
+.icon-basic-todolist-pencil:before {
+  content: "\e01b";
+}
+.icon-basic-trashcan:before {
+  content: "\e01c";
+}
+.icon-basic-trashcan-full:before {
+  content: "\e01d";
+}
+.icon-basic-trashcan-refresh:before {
+  content: "\e01e";
+}
+.icon-basic-trashcan-remove:before {
+  content: "\e01f";
+}
+.icon-basic-upload:before {
+  content: "\e020";
+}
+.icon-basic-usb:before {
+  content: "\e021";
+}
+.icon-basic-video:before {
+  content: "\e022";
+}
+.icon-basic-watch:before {
+  content: "\e023";
+}
+.icon-basic-webpage:before {
+  content: "\e024";
+}
+.icon-basic-webpage-img-txt:before {
+  content: "\e025";
+}
+.icon-basic-webpage-multiple:before {
+  content: "\e026";
+}
+.icon-basic-webpage-txt:before {
+  content: "\e027";
+}
+.icon-basic-world:before {
+  content: "\e028";
+}
+
 /*
 0-600px      phone
 600-900px    tablet protrait 
@@ -38,13 +484,13 @@ html {
   /* if the width is less then 900px  */
   /* if the width is less then 1200px  */
   /* if the width is bigger then 1800px  */ }
-  @media only screen and (max-width: 75em) {
+  @media (max-width: 75em) {
     html {
       font-size: 56.25%; } }
-  @media only screen and (max-width: 56.25em) {
+  @media (max-width: 56.25em) {
     html {
       font-size: 50%; } }
-  @media only screen and (min-width: 112.5em) {
+  @media (min-width: 112.5em) {
     html {
       font-size: 75%; } }
 
@@ -57,14 +503,10 @@ body {
   /* if the width is less then 900px  */
   /* if the width is less then 1200px  */
   /* if the width is bigger then 1800px  */ }
-  @media only screen and (max-width: 56.25em) {
+  @media (max-width: 56.25em) {
     body {
       /* get rid of the white border  */
       padding: 0; } }
-
-::selection {
-  background-color: #55c57a;
-  color: #fff; }
 
 /* adding an animation to the page   */
 @keyframes moveInLeft {
@@ -136,7 +578,7 @@ body {
     /* if the width is less then 900px  */
     /* if the width is less then 1200px  */
     /* if the width is bigger then 1800px  */ }
-    @media only screen and (max-width: 37.5em) {
+    @media (max-width: 37.5em) {
       .heading-primary--main {
         letter-spacing: 1rem;
         font-size: 5rem; } }
@@ -150,7 +592,7 @@ body {
     /* if the width is less then 900px  */
     /* if the width is less then 1200px  */
     /* if the width is bigger then 1800px  */ }
-    @media only screen and (max-width: 37.5em) {
+    @media (max-width: 37.5em) {
       .heading-primary--sub {
         letter-spacing: .5rem; } }
 
@@ -173,10 +615,10 @@ body {
   /* if the width is less then 900px  */
   /* if the width is less then 1200px  */
   /* if the width is bigger then 1800px  */ }
-  @media only screen and (max-width: 56.25em) {
+  @media (max-width: 56.25em) {
     .heading-secondery {
       font-size: 3rem; } }
-  @media only screen and (max-width: 37.5em) {
+  @media (max-width: 37.5em) {
     .heading-secondery {
       font-size: 2.5rem; } }
   .heading-secondery:hover {
@@ -202,7 +644,7 @@ body {
   /* if the width is less then 900px  */
   /* if the width is less then 1200px  */
   /* if the width is bigger then 1800px  */ }
-  @media only screen and (max-width: 56.25em) {
+  @media (max-width: 56.25em) {
     .u-margin-bottom-big {
       margin-bottom: 5rem !important; } }
 
@@ -212,7 +654,7 @@ body {
   /* if the width is less then 900px  */
   /* if the width is less then 1200px  */
   /* if the width is bigger then 1800px  */ }
-  @media only screen and (max-width: 56.25em) {
+  @media (max-width: 56.25em) {
     .u-margin-bottom-medium {
       margin-bottom: 3rem !important; } }
 
@@ -320,7 +762,7 @@ body {
     /* if the width is less then 900px  */
     /* if the width is less then 1200px  */
     /* if the width is bigger then 1800px  */ }
-    @media only screen and (max-width: 56.25em) {
+    @media (max-width: 56.25em) {
       .composition__photo {
         /* in order to make them float we need to set position to relatie */
         float: left;
@@ -334,7 +776,7 @@ body {
       /* if the width is less then 900px  */
       /* if the width is less then 1200px  */
       /* if the width is bigger then 1800px  */ }
-      @media only screen and (max-width: 56.25em) {
+      @media (max-width: 56.25em) {
         .composition__photo--p1 {
           top: 0;
           transform: scale(1.2); } }
@@ -345,7 +787,7 @@ body {
       /* if the width is less then 900px  */
       /* if the width is less then 1200px  */
       /* if the width is bigger then 1800px  */ }
-      @media only screen and (max-width: 56.25em) {
+      @media (max-width: 56.25em) {
         .composition__photo--p2 {
           top: -1rem;
           transform: scale(1.3);
@@ -357,7 +799,7 @@ body {
       /* if the width is less then 900px  */
       /* if the width is less then 1200px  */
       /* if the width is bigger then 1800px  */ }
-      @media only screen and (max-width: 56.25em) {
+      @media (max-width: 56.25em) {
         .composition__photo--p3 {
           top: 1rem;
           left: 0;
@@ -382,7 +824,7 @@ body {
   /* if the width is less then 900px  */
   /* if the width is less then 1200px  */
   /* if the width is bigger then 1800px  */ }
-  @media only screen and (max-width: 56.25em) {
+  @media (max-width: 56.25em) {
     .feature-box {
       padding: 2rem; } }
   .feature-box__icon {
@@ -397,7 +839,7 @@ body {
     /* if the width is less then 900px  */
     /* if the width is less then 1200px  */
     /* if the width is bigger then 1800px  */ }
-    @media only screen and (max-width: 56.25em) {
+    @media (max-width: 56.25em) {
       .feature-box__icon {
         margin-bottom: 0; } }
   .feature-box:hover {
@@ -407,7 +849,11 @@ body {
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
-  height: 51rem; }
+  height: 51rem;
+  /* if the width is less then 600px  */
+  /* if the width is less then 900px  */
+  /* if the width is less then 1200px  */
+  /* if the width is bigger then 1800px  */ }
   .card__side {
     background-color: #fff;
     height: 51rem;
@@ -498,7 +944,7 @@ body {
   .card__price-value {
     font-size: 6rem;
     font-weight: 100; }
-  @media only screen and (max-width: 56.25em), only screen and (hover: none) {
+  @media (max-width: 56.25em) {
     .card {
       height: auto;
       border-radius: 3px;
@@ -552,12 +998,12 @@ body {
   /* if the width is less then 900px  */
   /* if the width is less then 1200px  */
   /* if the width is bigger then 1800px  */ }
-  @media only screen and (max-width: 56.25em) {
+  @media (max-width: 56.25em) {
     .story {
       width: 90%;
       padding: 4rem;
       padding-left: 2rem; } }
-  @media only screen and (max-width: 37.5em) {
+  @media (max-width: 37.5em) {
     .story {
       transform: skew(0); } }
   .story__shape {
@@ -579,7 +1025,7 @@ body {
         clip-path: circle(50% at 50% 50%);
         width: 15rem;
         height: 15rem; } }
-    @media only screen and (max-width: 37.5em) {
+    @media (max-width: 37.5em) {
       .story__shape {
         transform: translateX(-3rem) skew(0); } }
   .story__img {
@@ -593,7 +1039,7 @@ body {
     /* if the width is less then 900px  */
     /* if the width is less then 1200px  */
     /* if the width is bigger then 1800px  */ }
-    @media only screen and (max-width: 37.5em) {
+    @media (max-width: 37.5em) {
       .story__text {
         transform: skew(0);
         display: flow-root; } }
@@ -662,7 +1108,7 @@ body {
     /* focus pseudo class represenrt state */
     /* when we have an invalid foucos input element then => */
     /* pseudo element-> represenrt thing that are actually on the webpage   */ }
-    @media only screen and (max-width: 56.25em) {
+    @media (max-width: 56.25em) {
       .form__input {
         width: 85%; } }
     .form__input:focus {
@@ -694,7 +1140,7 @@ body {
     /* if the width is less then 900px  */
     /* if the width is less then 1200px  */
     /* if the width is bigger then 1800px  */ }
-    @media only screen and (max-width: 56.25em) {
+    @media (max-width: 56.25em) {
       .form__radio-group {
         width: 100%;
         margin-bottom: 2rem; } }
@@ -780,7 +1226,7 @@ body {
     /* if the width is less then 900px  */
     /* if the width is less then 1200px  */
     /* if the width is bigger then 1800px  */ }
-    @media only screen and (max-width: 56.25em) {
+    @media (max-width: 56.25em) {
       .popup__left {
         display: table-row;
         width: 100%; } }
@@ -839,10 +1285,10 @@ body {
     /* if the width is less then 900px  */
     /* if the width is less then 1200px  */
     /* if the width is bigger then 1800px  */ }
-    @media only screen and (max-width: 56.25em) {
+    @media (max-width: 56.25em) {
       .row:not(:last-child) {
         margin-bottom: 6rem; } }
-  @media only screen and (max-width: 56.25em) {
+  @media (max-width: 56.25em) {
     .row {
       max-width: 50rem;
       padding: 0 3rem; } }
@@ -864,11 +1310,11 @@ body {
       /* if the width is less then 900px  */
       /* if the width is less then 1200px  */
       /* if the width is bigger then 1800px  */ }
-      @media only screen and (max-width: 56.25em) {
+      @media (max-width: 56.25em) {
         .row [class^='col-']:not(:last-child) {
           margin-right: 0;
           margin-bottom: 6rem; } }
-    @media only screen and (max-width: 56.25em) {
+    @media (max-width: 56.25em) {
       .row [class^='col-'] {
         width: 100% !important; } }
   .row .col-1-of-2 {
@@ -904,10 +1350,10 @@ body {
       /* shaping our header  */
       clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
       height: 95vh; } }
-  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratop: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
+  @media (min-resolution: 192dpi) and (min-width: 37.5em), (-webkit-min-device-pixel-ratop: 2) and (min-width: 37.5em), (min-width: 125em) {
     .Header {
       background-image: linear-gradient(to left bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero.jpg); } }
-  @media only screen and (max-width: 37.5em) {
+  @media (max-width: 37.5em) {
     .Header {
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
       /* shaping our header  */
@@ -939,7 +1385,7 @@ body {
   /* if the width is less then 1200px  */
   /* if the width is bigger then 1800px  */
   /*this is an inline element so we can use text-align:center;  */ }
-  @media only screen and (max-width: 56.25em) {
+  @media (max-width: 56.25em) {
     .footer {
       padding: 8rem 0; } }
   .footer__logo-box {
@@ -949,7 +1395,7 @@ body {
     /* if the width is less then 900px  */
     /* if the width is less then 1200px  */
     /* if the width is bigger then 1800px  */ }
-    @media only screen and (max-width: 56.25em) {
+    @media (max-width: 56.25em) {
       .footer__logo-box {
         margin-bottom: 6rem; } }
   .footer__logo {
@@ -964,7 +1410,7 @@ body {
     /* if the width is less then 900px  */
     /* if the width is less then 1200px  */
     /* if the width is bigger then 1800px  */ }
-    @media only screen and (max-width: 56.25em) {
+    @media (max-width: 56.25em) {
       .footer__navigation {
         width: 100%;
         text-align: center; } }
@@ -997,7 +1443,7 @@ body {
     /* if the width is less then 900px  */
     /* if the width is less then 1200px  */
     /* if the width is bigger then 1800px  */ }
-    @media only screen and (max-width: 56.25em) {
+    @media (max-width: 56.25em) {
       .footer__copyright {
         width: 100%;
         float: none; } }
@@ -1031,11 +1477,11 @@ body {
     /* if the width is less then 900px  */
     /* if the width is less then 1200px  */
     /* if the width is bigger then 1800px  */ }
-    @media only screen and (max-width: 56.25em) {
+    @media (max-width: 56.25em) {
       .navigation__button {
         top: 4rem;
         right: 4rem; } }
-    @media only screen and (max-width: 37.5em) {
+    @media (max-width: 37.5em) {
       .navigation__button {
         top: 3rem;
         right: 3rem; } }
@@ -1063,11 +1509,11 @@ body {
     /* if the width is less then 900px  */
     /* if the width is less then 1200px  */
     /* if the width is bigger then 1800px  */ }
-    @media only screen and (max-width: 56.25em) {
+    @media (max-width: 56.25em) {
       .navigation__background {
         top: 4.5rem;
         right: 4.5rem; } }
-    @media only screen and (max-width: 37.5em) {
+    @media (max-width: 37.5em) {
       .navigation__background {
         top: 3.5rem;
         right: 3.5rem; } }
@@ -1149,7 +1595,7 @@ body {
   /* if the width is less then 900px  */
   /* if the width is less then 1200px  */
   /* if the width is bigger then 1800px  */ }
-  @media only screen and (max-width: 56.25em) {
+  @media (max-width: 56.25em) {
     .section-about {
       padding: 20rem 0; } }
 
@@ -1165,7 +1611,7 @@ body {
   /* if the width is bigger then 1800px  */ }
   .section-features > * {
     transform: skewY(7deg); }
-  @media only screen and (max-width: 56.25em) {
+  @media (max-width: 56.25em) {
     .section-features {
       padding: 10rem 0; } }
 
@@ -1177,7 +1623,7 @@ body {
   /* if the width is less then 900px  */
   /* if the width is less then 1200px  */
   /* if the width is bigger then 1800px  */ }
-  @media only screen and (max-width: 56.25em) {
+  @media (max-width: 56.25em) {
     .section-course {
       padding: 20rem 0 10rem 0; } }
 
@@ -1188,7 +1634,7 @@ body {
   /* if the width is less then 900px  */
   /* if the width is less then 1200px  */
   /* if the width is bigger then 1800px  */ }
-  @media only screen and (max-width: 56.25em) {
+  @media (max-width: 56.25em) {
     .section-stories {
       padding: 10rem 0; } }
 
@@ -1199,7 +1645,7 @@ body {
   /* if the width is less then 900px  */
   /* if the width is less then 1200px  */
   /* if the width is bigger then 1800px  */ }
-  @media only screen and (max-width: 56.25em) {
+  @media (max-width: 56.25em) {
     .section-book {
       padding: 10rem 0; } }
 
@@ -1216,11 +1662,11 @@ body {
   /* if the width is less then 900px  */
   /* if the width is less then 1200px  */
   /* if the width is bigger then 1800px  */ }
-  @media only screen and (max-width: 75em) {
+  @media (max-width: 75em) {
     .book {
       background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 65%, transparent 65%), url(../img/nat-10.jpg);
       background-size: cover; } }
-  @media only screen and (max-width: 56.25em) {
+  @media (max-width: 56.25em) {
     .book {
       background-image: linear-gradient(to tight, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%), url(../img/nat-10.jpg); } }
   .book__form {
@@ -1234,9 +1680,9 @@ body {
     /* if the width is less then 900px  */
     /* if the width is less then 1200px  */
     /* if the width is bigger then 1800px  */ }
-    @media only screen and (max-width: 75em) {
+    @media (max-width: 75em) {
       .book__form {
         width: 65%; } }
-    @media only screen and (max-width: 56.25em) {
+    @media (max-width: 56.25em) {
       .book__form {
         width: 100%; } }

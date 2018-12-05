@@ -3,7 +3,7 @@
 
 .Header{
     /* at any time the hieght of this element should be 95% of the viewport  */
-    height: 95vh;
+    height: 85vh;
     /* making the first image transprent */
     background-image:linear-gradient(to left bottom, 
     rgba($color-primary-light,0.8),
@@ -13,9 +13,25 @@
     /* make sure the picture will allways stay at the top  */
     background-position: top;
     position: relative;
-    -webkit-clip-path: polygon(0 0,100% 0,100% 75vh,0 100%);
-    /* shaping our header  */
-    clip-path: polygon(0 0,100% 0,100% 75vh,0 100%);
+   
+
+    @supports(clip-path:polygon(0 0)) or (-webkit-clip-path:polygon(0 0)){
+        -webkit-clip-path: polygon(0 0,100% 0,100% 75vh,0 100%);
+        /* shaping our header  */
+        clip-path: polygon(0 0,100% 0,100% 75vh,0 100%);
+        height: 95vh;
+    }
+
+    /* when we have a 2x screen and the width is larger then 600px  */
+    @media only screen and (min-resolution:192dpi) and (min-width:37.5em),
+            only screen and (-webkit-min-device-pixel-ratop:2) and (min-width:37.5em),
+            only screen and  (min-width:125em) {
+    background-image:linear-gradient(to left bottom, 
+    rgba($color-primary-light,0.8),
+    rgba($color-primary-dark,0.8)),
+    url(../img/hero.jpg);
+    }
+
 
     @include respond(phone){
         -webkit-clip-path: polygon(0 0,100% 0,100% 85vh,0 100%);

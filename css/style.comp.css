@@ -38,13 +38,13 @@ html {
   /* if the width is less then 900px  */
   /* if the width is less then 1200px  */
   /* if the width is bigger then 1800px  */ }
-  @media only screen and (max-width: 75em) {
+  @media (max-width: 75em) {
     html {
       font-size: 56.25%; } }
-  @media only screen and (max-width: 56.25em) {
+  @media (max-width: 56.25em) {
     html {
       font-size: 50%; } }
-  @media only screen and (min-width: 112.5em) {
+  @media (min-width: 112.5em) {
     html {
       font-size: 75%; } }
 
@@ -57,14 +57,10 @@ body {
   /* if the width is less then 900px  */
   /* if the width is less then 1200px  */
   /* if the width is bigger then 1800px  */ }
-  @media only screen and (max-width: 56.25em) {
+  @media (max-width: 56.25em) {
     body {
       /* get rid of the white border  */
       padding: 0; } }
-
-::selection {
-  background-color: #55c57a;
-  color: #fff; }
 
 /* adding an animation to the page   */
 @keyframes moveInLeft {
@@ -136,7 +132,7 @@ body {
     /* if the width is less then 900px  */
     /* if the width is less then 1200px  */
     /* if the width is bigger then 1800px  */ }
-    @media only screen and (max-width: 37.5em) {
+    @media (max-width: 37.5em) {
       .heading-primary--main {
         letter-spacing: 1rem;
         font-size: 5rem; } }
@@ -150,7 +146,7 @@ body {
     /* if the width is less then 900px  */
     /* if the width is less then 1200px  */
     /* if the width is bigger then 1800px  */ }
-    @media only screen and (max-width: 37.5em) {
+    @media (max-width: 37.5em) {
       .heading-primary--sub {
         letter-spacing: .5rem; } }
 
@@ -173,10 +169,10 @@ body {
   /* if the width is less then 900px  */
   /* if the width is less then 1200px  */
   /* if the width is bigger then 1800px  */ }
-  @media only screen and (max-width: 56.25em) {
+  @media (max-width: 56.25em) {
     .heading-secondery {
       font-size: 3rem; } }
-  @media only screen and (max-width: 37.5em) {
+  @media (max-width: 37.5em) {
     .heading-secondery {
       font-size: 2.5rem; } }
   .heading-secondery:hover {
@@ -202,7 +198,7 @@ body {
   /* if the width is less then 900px  */
   /* if the width is less then 1200px  */
   /* if the width is bigger then 1800px  */ }
-  @media only screen and (max-width: 56.25em) {
+  @media (max-width: 56.25em) {
     .u-margin-bottom-big {
       margin-bottom: 5rem !important; } }
 
@@ -212,7 +208,7 @@ body {
   /* if the width is less then 900px  */
   /* if the width is less then 1200px  */
   /* if the width is bigger then 1800px  */ }
-  @media only screen and (max-width: 56.25em) {
+  @media (max-width: 56.25em) {
     .u-margin-bottom-medium {
       margin-bottom: 3rem !important; } }
 
@@ -320,7 +316,7 @@ body {
     /* if the width is less then 900px  */
     /* if the width is less then 1200px  */
     /* if the width is bigger then 1800px  */ }
-    @media only screen and (max-width: 56.25em) {
+    @media (max-width: 56.25em) {
       .composition__photo {
         /* in order to make them float we need to set position to relatie */
         float: left;
@@ -334,7 +330,7 @@ body {
       /* if the width is less then 900px  */
       /* if the width is less then 1200px  */
       /* if the width is bigger then 1800px  */ }
-      @media only screen and (max-width: 56.25em) {
+      @media (max-width: 56.25em) {
         .composition__photo--p1 {
           top: 0;
           transform: scale(1.2); } }
@@ -345,7 +341,7 @@ body {
       /* if the width is less then 900px  */
       /* if the width is less then 1200px  */
       /* if the width is bigger then 1800px  */ }
-      @media only screen and (max-width: 56.25em) {
+      @media (max-width: 56.25em) {
         .composition__photo--p2 {
           top: -1rem;
           transform: scale(1.3);
@@ -357,7 +353,7 @@ body {
       /* if the width is less then 900px  */
       /* if the width is less then 1200px  */
       /* if the width is bigger then 1800px  */ }
-      @media only screen and (max-width: 56.25em) {
+      @media (max-width: 56.25em) {
         .composition__photo--p3 {
           top: 1rem;
           left: 0;
@@ -382,7 +378,7 @@ body {
   /* if the width is less then 900px  */
   /* if the width is less then 1200px  */
   /* if the width is bigger then 1800px  */ }
-  @media only screen and (max-width: 56.25em) {
+  @media (max-width: 56.25em) {
     .feature-box {
       padding: 2rem; } }
   .feature-box__icon {
@@ -397,7 +393,7 @@ body {
     /* if the width is less then 900px  */
     /* if the width is less then 1200px  */
     /* if the width is bigger then 1800px  */ }
-    @media only screen and (max-width: 56.25em) {
+    @media (max-width: 56.25em) {
       .feature-box__icon {
         margin-bottom: 0; } }
   .feature-box:hover {
@@ -407,7 +403,11 @@ body {
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
-  height: 51rem; }
+  height: 51rem;
+  /* if the width is less then 600px  */
+  /* if the width is less then 900px  */
+  /* if the width is less then 1200px  */
+  /* if the width is bigger then 1800px  */ }
   .card__side {
     background-color: #fff;
     height: 51rem;
@@ -498,7 +498,7 @@ body {
   .card__price-value {
     font-size: 6rem;
     font-weight: 100; }
-  @media only screen and (max-width: 56.25em), only screen and (hover: none) {
+  @media (max-width: 56.25em) {
     .card {
       height: auto;
       border-radius: 3px;
@@ -552,12 +552,12 @@ body {
   /* if the width is less then 900px  */
   /* if the width is less then 1200px  */
   /* if the width is bigger then 1800px  */ }
-  @media only screen and (max-width: 56.25em) {
+  @media (max-width: 56.25em) {
     .story {
       width: 90%;
       padding: 4rem;
       padding-left: 2rem; } }
-  @media only screen and (max-width: 37.5em) {
+  @media (max-width: 37.5em) {
     .story {
       transform: skew(0); } }
   .story__shape {
@@ -579,7 +579,7 @@ body {
         clip-path: circle(50% at 50% 50%);
         width: 15rem;
         height: 15rem; } }
-    @media only screen and (max-width: 37.5em) {
+    @media (max-width: 37.5em) {
       .story__shape {
         transform: translateX(-3rem) skew(0); } }
   .story__img {
@@ -593,7 +593,7 @@ body {
     /* if the width is less then 900px  */
     /* if the width is less then 1200px  */
     /* if the width is bigger then 1800px  */ }
-    @media only screen and (max-width: 37.5em) {
+    @media (max-width: 37.5em) {
       .story__text {
         transform: skew(0);
         display: flow-root; } }
@@ -662,7 +662,7 @@ body {
     /* focus pseudo class represenrt state */
     /* when we have an invalid foucos input element then => */
     /* pseudo element-> represenrt thing that are actually on the webpage   */ }
-    @media only screen and (max-width: 56.25em) {
+    @media (max-width: 56.25em) {
       .form__input {
         width: 85%; } }
     .form__input:focus {
@@ -694,7 +694,7 @@ body {
     /* if the width is less then 900px  */
     /* if the width is less then 1200px  */
     /* if the width is bigger then 1800px  */ }
-    @media only screen and (max-width: 56.25em) {
+    @media (max-width: 56.25em) {
       .form__radio-group {
         width: 100%;
         margin-bottom: 2rem; } }
@@ -780,7 +780,7 @@ body {
     /* if the width is less then 900px  */
     /* if the width is less then 1200px  */
     /* if the width is bigger then 1800px  */ }
-    @media only screen and (max-width: 56.25em) {
+    @media (max-width: 56.25em) {
       .popup__left {
         display: table-row;
         width: 100%; } }
@@ -839,10 +839,10 @@ body {
     /* if the width is less then 900px  */
     /* if the width is less then 1200px  */
     /* if the width is bigger then 1800px  */ }
-    @media only screen and (max-width: 56.25em) {
+    @media (max-width: 56.25em) {
       .row:not(:last-child) {
         margin-bottom: 6rem; } }
-  @media only screen and (max-width: 56.25em) {
+  @media (max-width: 56.25em) {
     .row {
       max-width: 50rem;
       padding: 0 3rem; } }
@@ -864,11 +864,11 @@ body {
       /* if the width is less then 900px  */
       /* if the width is less then 1200px  */
       /* if the width is bigger then 1800px  */ }
-      @media only screen and (max-width: 56.25em) {
+      @media (max-width: 56.25em) {
         .row [class^='col-']:not(:last-child) {
           margin-right: 0;
           margin-bottom: 6rem; } }
-    @media only screen and (max-width: 56.25em) {
+    @media (max-width: 56.25em) {
       .row [class^='col-'] {
         width: 100% !important; } }
   .row .col-1-of-2 {
@@ -904,10 +904,10 @@ body {
       /* shaping our header  */
       clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
       height: 95vh; } }
-  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratop: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
+  @media (min-resolution: 192dpi) and (min-width: 37.5em), (-webkit-min-device-pixel-ratop: 2) and (min-width: 37.5em), (min-width: 125em) {
     .Header {
       background-image: linear-gradient(to left bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero.jpg); } }
-  @media only screen and (max-width: 37.5em) {
+  @media (max-width: 37.5em) {
     .Header {
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
       /* shaping our header  */
@@ -939,7 +939,7 @@ body {
   /* if the width is less then 1200px  */
   /* if the width is bigger then 1800px  */
   /*this is an inline element so we can use text-align:center;  */ }
-  @media only screen and (max-width: 56.25em) {
+  @media (max-width: 56.25em) {
     .footer {
       padding: 8rem 0; } }
   .footer__logo-box {
@@ -949,7 +949,7 @@ body {
     /* if the width is less then 900px  */
     /* if the width is less then 1200px  */
     /* if the width is bigger then 1800px  */ }
-    @media only screen and (max-width: 56.25em) {
+    @media (max-width: 56.25em) {
       .footer__logo-box {
         margin-bottom: 6rem; } }
   .footer__logo {
@@ -964,7 +964,7 @@ body {
     /* if the width is less then 900px  */
     /* if the width is less then 1200px  */
     /* if the width is bigger then 1800px  */ }
-    @media only screen and (max-width: 56.25em) {
+    @media (max-width: 56.25em) {
       .footer__navigation {
         width: 100%;
         text-align: center; } }
@@ -997,7 +997,7 @@ body {
     /* if the width is less then 900px  */
     /* if the width is less then 1200px  */
     /* if the width is bigger then 1800px  */ }
-    @media only screen and (max-width: 56.25em) {
+    @media (max-width: 56.25em) {
       .footer__copyright {
         width: 100%;
         float: none; } }
@@ -1031,11 +1031,11 @@ body {
     /* if the width is less then 900px  */
     /* if the width is less then 1200px  */
     /* if the width is bigger then 1800px  */ }
-    @media only screen and (max-width: 56.25em) {
+    @media (max-width: 56.25em) {
       .navigation__button {
         top: 4rem;
         right: 4rem; } }
-    @media only screen and (max-width: 37.5em) {
+    @media (max-width: 37.5em) {
       .navigation__button {
         top: 3rem;
         right: 3rem; } }
@@ -1063,11 +1063,11 @@ body {
     /* if the width is less then 900px  */
     /* if the width is less then 1200px  */
     /* if the width is bigger then 1800px  */ }
-    @media only screen and (max-width: 56.25em) {
+    @media (max-width: 56.25em) {
       .navigation__background {
         top: 4.5rem;
         right: 4.5rem; } }
-    @media only screen and (max-width: 37.5em) {
+    @media (max-width: 37.5em) {
       .navigation__background {
         top: 3.5rem;
         right: 3.5rem; } }
@@ -1149,7 +1149,7 @@ body {
   /* if the width is less then 900px  */
   /* if the width is less then 1200px  */
   /* if the width is bigger then 1800px  */ }
-  @media only screen and (max-width: 56.25em) {
+  @media (max-width: 56.25em) {
     .section-about {
       padding: 20rem 0; } }
 
@@ -1165,7 +1165,7 @@ body {
   /* if the width is bigger then 1800px  */ }
   .section-features > * {
     transform: skewY(7deg); }
-  @media only screen and (max-width: 56.25em) {
+  @media (max-width: 56.25em) {
     .section-features {
       padding: 10rem 0; } }
 
@@ -1177,7 +1177,7 @@ body {
   /* if the width is less then 900px  */
   /* if the width is less then 1200px  */
   /* if the width is bigger then 1800px  */ }
-  @media only screen and (max-width: 56.25em) {
+  @media (max-width: 56.25em) {
     .section-course {
       padding: 20rem 0 10rem 0; } }
 
@@ -1188,7 +1188,7 @@ body {
   /* if the width is less then 900px  */
   /* if the width is less then 1200px  */
   /* if the width is bigger then 1800px  */ }
-  @media only screen and (max-width: 56.25em) {
+  @media (max-width: 56.25em) {
     .section-stories {
       padding: 10rem 0; } }
 
@@ -1199,7 +1199,7 @@ body {
   /* if the width is less then 900px  */
   /* if the width is less then 1200px  */
   /* if the width is bigger then 1800px  */ }
-  @media only screen and (max-width: 56.25em) {
+  @media (max-width: 56.25em) {
     .section-book {
       padding: 10rem 0; } }
 
@@ -1216,11 +1216,11 @@ body {
   /* if the width is less then 900px  */
   /* if the width is less then 1200px  */
   /* if the width is bigger then 1800px  */ }
-  @media only screen and (max-width: 75em) {
+  @media (max-width: 75em) {
     .book {
       background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 65%, transparent 65%), url(../img/nat-10.jpg);
       background-size: cover; } }
-  @media only screen and (max-width: 56.25em) {
+  @media (max-width: 56.25em) {
     .book {
       background-image: linear-gradient(to tight, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%), url(../img/nat-10.jpg); } }
   .book__form {
@@ -1234,9 +1234,9 @@ body {
     /* if the width is less then 900px  */
     /* if the width is less then 1200px  */
     /* if the width is bigger then 1800px  */ }
-    @media only screen and (max-width: 75em) {
+    @media (max-width: 75em) {
       .book__form {
         width: 65%; } }
-    @media only screen and (max-width: 56.25em) {
+    @media (max-width: 56.25em) {
       .book__form {
         width: 100%; } }

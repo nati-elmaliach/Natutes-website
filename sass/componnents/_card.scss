@@ -21,7 +21,9 @@
     width: 100%;
 
     // hides the back part of en element
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
+
     border-radius: 3px;
     // since the image is overflowing the parent in the corners
     overflow: hidden;
@@ -194,7 +196,10 @@
 
 
 
-    @include respond (tab-port){
+    //@include respond (tab-port){
+        //the media wuery ask if the screen is  tab-port and we are ush a touch device
+        @media only screen and (max-width: 56.25em),
+        only screen and (hover:none) {
      
         height: auto;
         border-radius: 3px;
